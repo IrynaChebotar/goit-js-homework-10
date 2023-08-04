@@ -5,7 +5,7 @@ axios.defaults.headers.common['x-api-key'] =
 'live_UvmRvPcq5CNoEMbMbTzJaJnvlWGQC1r397OnZ0EsOzyNJfomdvBQju0VHjI59rTE';
 
 export function fetchBreeds() {
-Notiflix.Loading.dots('Loading data, please wait', {
+Notiflix.Loading.pulse('Loading data, please wait', {
 backgroundColor: 'rgba(0,0,0,0.8)',
 });
 
@@ -24,7 +24,7 @@ throw error;
 }
 
 export function fetchCatByBreed(breedId) {
-Notiflix.Loading.dots('Loading data, please wait', {
+Notiflix.Loading.pulse('Loading data, please wait', {
 backgroundColor: 'rgba(0,0,0,0.8)',
 });
 
